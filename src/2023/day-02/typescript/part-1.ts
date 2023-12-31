@@ -10,7 +10,7 @@ export function Part1(input: string) {
           if (c === "red") return +v <= 12
           else if (c === "green") return +v <= 13
           else if (c === "blue") return +v <= 14
-          return true
+          return false
         })
       }).every((x) => x.every((y) => y)) ? +label.split(" ")[1] : 0
     }).reduce((a, b) => a + b);
