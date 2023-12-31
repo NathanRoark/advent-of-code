@@ -17,7 +17,7 @@ pub fn part_2(input: &str) -> i32 {
             "red" => max.0 = max.0.max(v),
             "green" => max.1 = max.1.max(v),
             "blue" => max.2 = max.2.max(v),
-            _ => (),
+            _ => panic!("it could be worse"),
           }
         });
       });
